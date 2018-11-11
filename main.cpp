@@ -13,5 +13,12 @@ int main(){
 	fridge.add(vodka);
 	fridge.change_status("onion",5);
 	fridge.show_all();
+	Status prefer;
+	prefer.add(onion);
+	prefer.add(yoghurt);
+	prefer.add(beer);
+	prefer.add(vodka);
+	prefer.change_status("yoghurt",4);
+
 	return 0;
 }

@@ -17,4 +17,18 @@ void Status::show_all(){
 		cout<<present[i].show_price()<<endl;
 	}
 }
+Product Status::show_prod(int a){
+	return present[a];
+}
+int Status::size(){
+	return present.size();
+}
+void Status::remove(string s_n){
+	for(int i=0;i<present.size();i++)
+		if(s_n==present[i].show_name()){
+			swap(present[i],present[present.size()-1]);
+			present.pop_back();
+			break;
+		}
+}
 	

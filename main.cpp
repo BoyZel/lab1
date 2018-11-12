@@ -1,5 +1,6 @@
 #include "product.h"
 #include "fridge.h"
+#include "list.h"
 using namespace std;
 int main(){
 	Product onion("onion",0,2.99);
@@ -12,6 +13,7 @@ int main(){
 	fridge.add(beer);
 	fridge.add(vodka);
 	fridge.change_status("onion",5);
+	cout<<"FRIDGE"<<endl;
 	fridge.show_all();
 	Status prefer;
 	prefer.add(onion);
@@ -19,6 +21,14 @@ int main(){
 	prefer.add(beer);
 	prefer.add(vodka);
 	prefer.change_status("yoghurt",4);
+	prefer.change_status("beer",2);
+	prefer.change_status("vodka",11);
+	cout<<endl<<"PREFERENCES"<<endl;
+	prefer.show_all();
+	cout<<endl<<"LIST"<<endl;
+	List shopping;
+	shopping.make(prefer,fridge);
+	shopping.show_all();
 
 	return 0;
 }

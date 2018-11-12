@@ -8,9 +8,12 @@ using namespace std;
 class Status{
 	vector<Product> present;
 	public:
-	void change_status(string s_n,int s_nu);
-	void add(Product a);
+	void change_status(string,int);
+	void add(Product);
+	void remove(string);
 	void show_all();
+	Product show_prod(int);
+	int size();
 };
 	
 #endif

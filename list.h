@@ -13,6 +13,7 @@ class List{
 	Product the_m_expensive();
 	void add_to_list(Product);
 	void show_all();
+	Product element(int);
 };
 
 #endif

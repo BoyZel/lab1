@@ -42,7 +42,9 @@ void List::show_all(){
 	thingstobuy.show_all();
 }
 		
-
+Product List::element(int a){
+	return thingstobuy.show_prod(a);
+}
 
 
 

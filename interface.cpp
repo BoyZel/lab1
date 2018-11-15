@@ -12,8 +12,9 @@ void Interface::interface(){
 	Test test1;
 	if(test1.check_the_m_expensive()==1 || test1.check_change_number(11)==1 || test1.check_add()==1 ||test1.check_make()==1){
 		cout<<"FAILURE OF TESTS"<<endl;
-		return ;
+		return;
 	}
+
 	cout<<"Welcome to the shopping list creator."<<endl;
 	for(int i=0;i<15;i++){
 		cout<<"What do you want to do?"<<endl;

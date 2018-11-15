@@ -1,7 +1,7 @@
 #ifndef _LIST_H
 #define _LIST_H
 #include <iostream>
-#include "fridge.h"
+#include "status.h"
 #include "product.h"
 #include <vector>
 using namespace std;

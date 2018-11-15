@@ -62,6 +62,7 @@ void Interface::interface(){
 					break;
 				case 2:
 					{
+					cout<<"PREFERENCES:"<<endl;
 					preferences.show_all();
 					}
 					break;
@@ -105,6 +106,7 @@ void Interface::interface(){
 					break;
 				case 2:
 					{
+					cout<<"FRIDGE:"<<endl;
 					fridge.show_all();
 				}
 					break;
@@ -145,6 +147,7 @@ void Interface::interface(){
 					break;
 				case 2:
 					{
+					cout<<"LIST:"<<endl;
 					shopping.show_all();
 					}
 					break;

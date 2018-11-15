@@ -1,5 +1,5 @@
 #include "product.h"
-#include "fridge.h"
+#include "status.h"
 #include "list.h"
 #include "test.h"
 #include "interface.h"
